@@ -38,6 +38,9 @@ class ML_FLOW:
             self.n_classes = n_classes
             x, y = make_classification(n_samples = n_samples, n_features = n_features, n_informative = n_informative, n_classes = n_classes)
 
+        name_columns = ['column_name_' + str(col_name).zfill(2) for col_name in range(n_features)]
+        x = pd.DataFrame(x, columns = name_columns)
+        y = pd.DataFrame(y, columns = ['y'])
 
         self.x_train, self.x_test, self.y_train, self.y_test = train_test_split(x, y, test_size = test_size)
 
@@ -86,7 +89,7 @@ class ML_FLOW:
 
     def _get_probs_pd(self, probs, y, file_name, path_name = ''):
 
-        probs_np = np.concatenate((probs, y.reshape(1, -1).T), axis = 1)
+        probs_np = np.concatenate((probs, y.to_numpy().reshape(1, -1).T), axis = 1)
 
         columns_name = ['prob_class_{}'.format(i) for i in range(self.n_classes)]
         columns_name += ['y']
@@ -189,6 +192,9 @@ class ML_FLOW:
                 # Log the table into mlflow
                 mlflow.log_artifact(train_path, 'tables/probs_train.csv')
                 mlflow.log_artifact(test_path, 'tables/probs_test.csv')
+            
+            mlflow.log_artifact("udf_utils.py", artifact_path = "helpers")
+            mlflow.log_artifact("mlflow_demo.ipynb", artifact_path = "notebook")
 
         mlflow.end_run()
 
