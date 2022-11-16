@@ -1,2 +1,4 @@
 .ipynb_checkpoints
 *.csv
+mlruns*
+*__pycache__
