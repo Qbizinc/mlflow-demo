@@ -72,7 +72,7 @@ scipy==1.9.3
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
 smmap==5.0.0
 SQLAlchemy==1.4.42
-sqlparse==0.4.3
+sqlparse==0.5.4
 stack-data @ file:///home/conda/feedstock_root/build_artifacts/stack_data_1664126450622/work
 tabulate==0.9.0
 threadpoolctl @ file:///home/conda/feedstock_root/build_artifacts/threadpoolctl_1643647933166/work
