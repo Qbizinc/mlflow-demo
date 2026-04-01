@@ -55,7 +55,7 @@ psutil @ file:///home/conda/feedstock_root/build_artifacts/psutil_1666155379462/
 ptyprocess @ file:///home/conda/feedstock_root/build_artifacts/ptyprocess_1609419310487/work/dist/ptyprocess-0.7.0-py2.py3-none-any.whl
 pure-eval @ file:///home/conda/feedstock_root/build_artifacts/pure_eval_1642875951954/work
 Pygments @ file:///home/conda/feedstock_root/build_artifacts/pygments_1660666458521/work
-PyJWT==2.6.0
+PyJWT==2.12.0
 pyparsing @ file:///home/conda/feedstock_root/build_artifacts/pyparsing_1652235407899/work
 PyQt5==5.12.3
 PyQt5_sip==4.19.18
