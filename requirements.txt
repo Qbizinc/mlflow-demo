@@ -83,4 +83,4 @@ urllib3==2.6.3
 wcwidth @ file:///home/conda/feedstock_root/build_artifacts/wcwidth_1600965781394/work
 websocket-client==1.4.1
 Werkzeug==3.1.6
-zipp==3.10.0
+zipp==3.19.1
