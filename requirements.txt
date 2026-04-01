@@ -66,7 +66,7 @@ pytz @ file:///home/conda/feedstock_root/build_artifacts/pytz_1666198565857/work
 PyYAML==6.0
 pyzmq @ file:///home/conda/feedstock_root/build_artifacts/pyzmq_1663830520841/work
 querystring-parser==1.2.4
-requests==2.28.1
+requests==2.33.0
 scikit-learn @ file:///home/conda/feedstock_root/build_artifacts/scikit-learn_1659726091027/work
 scipy==1.9.3
 six @ file:///home/conda/feedstock_root/build_artifacts/six_1620240208055/work
